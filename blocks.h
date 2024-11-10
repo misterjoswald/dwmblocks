@@ -11,7 +11,7 @@ static const Block blocks[] = {
 	{"", "xset -q|grep LED| awk '{ if (substr ($10,5,1) == 1) print \"Z\"; else print \"\"; }'", 0, 1},
 	{"", "date '+%a %d %b %R'",				        	60,		0},
 };
-
+//
 //sets delimiter between status commands. NULL character ('\0') means no delimiter.
 static char delim[] = " | ";
 static unsigned int delimLen = 5;
